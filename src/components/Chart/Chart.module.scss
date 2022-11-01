@@ -1,0 +1,42 @@
+@import '../../scss/variables.scss';
+@import '../../scss/mixins.scss';
+
+.container {
+  padding: 0 7px 3px 0;
+  margin-top: 32px;
+  width: 708px;
+  height: calc(100vh - 177px);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: $main-shadow;
+  .titleWrapper {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    .title {
+      @include todos-title;
+    }
+    .amount {
+      @include todos-amount;
+    }
+  }
+
+  .cardsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    height: calc(100vh - 245px);
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      margin-bottom: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary200;
+      border-radius: 2px;
+    }
+  }
+}

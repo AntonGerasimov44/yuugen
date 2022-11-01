@@ -1,0 +1,11 @@
+@import '../../scss/variables.scss';
+
+.container {
+  .header {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: $primary900;
+    margin-top: 32px;
+  }
+}

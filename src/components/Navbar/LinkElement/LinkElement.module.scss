@@ -1,0 +1,28 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.container {
+  .activeLink {
+    @include nav-link;
+    width: 100px;
+    > span {
+      @include nav-text;
+      color: $primary900;
+    }
+    > div * {
+      stroke: $primary900;
+    }
+  }
+
+  .notActiveLink {
+    @include nav-link;
+    width: 100px;
+    > span {
+      @include nav-text;
+      color: $primary500;
+    }
+    > div * {
+      stroke: $primary500;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+@import '../../scss/variables.scss';
+@import '../../scss/mixins.scss';
+
+.container {
+  margin-top: 32px;
+  border-radius: 8px;
+  box-shadow: $main-shadow;
+  height: calc(100vh - 225px - 32px);
+  padding: 32px;
+  .formWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    .fieldWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      position: relative;
+
+      > label {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: $primary900;
+      }
+
+      .input {
+        @include input-select;
+        &:focus {
+          box-shadow: $focus-field;
+        }
+      }
+      .errorInput {
+        @include input-select;
+        border: 1px solid $error300;
+        background: url(../../assets/images/error-icon.svg);
+        background-repeat: no-repeat;
+        background-position: right 13px top 13px;
+        &:focus {
+          box-shadow: $focus-field-error;
+        }
+      }
+
+      .select {
+        @include input-select;
+        appearance: none;
+        overflow: hidden;
+        background: url(../../assets/images/select-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: right 18px top 18px;
+        cursor: pointer;
+
+        > option {
+          cursor: pointer;
+        }
+      }
+
+      .textarea {
+        @include input-textarea;
+        &:focus {
+          box-shadow: $focus-field;
+        }
+      }
+      .errorTextarea {
+        @include input-textarea;
+        border: 1px solid $error300;
+        &:focus {
+          box-shadow: $focus-field-error;
+        }
+      }
+    }
+  }
+}

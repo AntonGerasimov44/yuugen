@@ -1,0 +1,78 @@
+@import './variables.scss';
+
+@mixin nav-link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  outline: none;
+  text-decoration: none;
+}
+
+@mixin nav-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: lowercase;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+@mixin list-header-element {
+  width: 130.5px;
+  display: flex;
+  align-items: center;
+  > span {
+    margin-left: 12px;
+  }
+}
+
+@mixin todo-status {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 16px;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+@mixin todos-title {
+  margin: 18px 8px 18px 18px;
+  font-size: 18px;
+  line-height: 28px;
+  color: $primary900;
+}
+
+@mixin todos-amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 18px;
+  color: $gray700;
+  width: 24px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: $gray100;
+}
+
+@mixin input-wrapper {
+  padding: 10px 14px;
+  background: $white;
+  border: 1px solid $gray300;
+  box-shadow: $input-shadow;
+  border-radius: 8px;
+}
+
+@mixin input-select {
+  @include input-wrapper;
+  width: 553px;
+  height: 44px;
+}
+
+@mixin input-textarea {
+  @include input-wrapper;
+  width: 553px;
+  height: 128px;
+  resize: none;
+}

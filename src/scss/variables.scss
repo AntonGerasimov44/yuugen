@@ -1,0 +1,42 @@
+/* --- colors --- */
+$white: #ffffff;
+
+$primary200: #bcc8bc;
+$primary500: #799179;
+$primary900: #293329;
+
+$gray50: #f9fafb;
+$gray100: #e4e7ec;
+$gray300: #d0d5dd;
+$gray500: #667085;
+$gray700: #344054;
+$gray900: #101b28;
+
+$error50: #fef3f2;
+$error100: #fee4e2;
+$error300: #fda29b;
+$error500: #f04438;
+$error700: #b42318;
+
+$warning50: #fffaeb;
+$warning100: #fef0c7;
+$warning700: #b54708;
+
+$success50: #ecfdf3;
+$success100: #d1fadf;
+$success700: #027a48;
+
+$accent600: #56b87d;
+
+/* --- --- --- */
+
+/* --- shadows --- */
+$main-shadow: 0px 4px 8px -2px rgba(41, 51, 41, 0.1),
+  0px 2px 4px -2px rgba(41, 51, 41, 0.06);
+
+$input-shadow: 0px 1px 2px rgba(24, 40, 16, 0.05);
+
+$focus-field: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px $gray300;
+
+$focus-field-error: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px $error100;
+/* --- --- --- */

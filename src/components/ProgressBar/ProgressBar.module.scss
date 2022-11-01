@@ -1,0 +1,23 @@
+@import '../../scss/variables.scss';
+
+.container {
+  .progressRing {
+    transform-origin: center;
+    transform: rotate(-90deg);
+    transition: stroke-dashoffset 0.3s;
+    stroke-linecap: round;
+
+    .overdue {
+      stroke: $error700;
+    }
+    .progress {
+      stroke: $warning700;
+    }
+    .draft {
+      stroke: $gray700;
+    }
+    .finished {
+      stroke: $success700;
+    }
+  }
+}

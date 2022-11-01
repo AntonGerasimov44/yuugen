@@ -1,0 +1,42 @@
+{
+  "language": "Змінити мову",
+
+  "validation": {
+    "min": "Занадто короткий запис!",
+    "max": "Надто довгий запис!",
+    "required": "Обов'язкове поле",
+    "number": "Введіть хоча б одне число",
+    "upperLetter": "Введіть хоча б одну велику літеру"
+  },
+
+  "header": {
+    "dashboard": "Панель",
+    "create": "Створити"
+  },
+  "dashboard": {
+    "myTodos": {
+      "myTodos": "Мої справи",
+      "invoice": "Накладна",
+      "status": "Статус",
+      "dueDate": "Термін виконання"
+    },
+    "publishReport": {
+      "publishReport": "Опублікувати звіт",
+      "itDepartment": "ІТ відділ",
+      "latestDate": "Остання дата"
+    }
+  },
+  "create": {
+    "createNew": "Створити новий",
+    "title": "Назва",
+    "status": "Статус",
+    "description": "Опис",
+    "options": {
+      "draft": "Чернетка",
+      "overdue": "Прострочена",
+      "finished": "Готово",
+      "inProgress": "В процесі"
+    },
+    "placeholderDescription": "Введіть опис..."
+  }
+}

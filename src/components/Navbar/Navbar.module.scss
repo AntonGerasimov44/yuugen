@@ -1,0 +1,10 @@
+
+.container {
+  .linkWrapper {
+    display: flex;
+    gap: 52px;
+    &:first-child {
+      margin-left: 76px;
+    }
+  }
+}

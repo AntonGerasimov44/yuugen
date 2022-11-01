@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { Suspense } from 'react';
 
-function App() {
+import { Header } from './components/Header/Header';
+import { Layout } from './components/Layout/Layout';
+import { Dashboard } from './pages/Dashboard/Dashboard';
+import { Create } from './pages/Create/Create';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Header />
+      <Layout>
+        <Routes>
+          <Route path='dashboard' element={<Dashboard />} />
+          <Route path='create' element={<Create />} />
+          <Route path='*' element={<Navigate to='dashboard' replace />} />
+        </Routes>
+      </Layout>
+    </Suspense>
   );
-}
+};
 
-export default App;
+export { App };

@@ -1,0 +1,64 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/mixins.scss';
+
+.container {
+  display: flex;
+  height: 52px;
+  align-items: center;
+  border-bottom: 1px solid $gray100;
+  font-size: 14px;
+  margin-right: 7px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $gray50;
+  }
+
+  .title {
+    color: $gray900;
+    font-weight: 500;
+    line-height: 20px;
+    width: 339px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 8px;
+  }
+
+  .statusWrapper {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    width: 130.5px;
+    padding-left: 12px;
+
+    > div {
+      @include todo-status;
+    }
+    .overdue {
+      background-color: $error50;
+      color: $error700;
+    }
+    .progress {
+      background-color: $warning50;
+      color: $warning700;
+    }
+    .draft {
+      background-color: $gray50;
+      color: $gray700;
+    }
+    .finished {
+      background-color: $success50;
+      color: $success700;
+    }
+  }
+
+  .createdAt {
+    font-weight: 300;
+    line-height: 20px;
+    color: $gray500;
+    width: 130.5px;
+    padding-left: 12px;
+  }
+}

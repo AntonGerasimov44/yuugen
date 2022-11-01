@@ -1,0 +1,43 @@
+{
+  "language": "Change language",
+
+  "validation": {
+    "min": "Too Short!",
+    "max": "Too long",
+    "required": "Required",
+    "number": "Enter at least one number",
+    "upperLetter": "Enter at least one capital letter"
+  },
+
+  "header": {
+    "dashboard": "Dashboard",
+    "create": "Create"
+  },
+
+  "dashboard": {
+    "myTodos": {
+      "myTodos": "My todo’s",
+      "invoice": "Invoice",
+      "status": "Status",
+      "dueDate": "Due date"
+    },
+    "publishReport": {
+      "publishReport": "Publish report",
+      "itDepartment": "IT Department",
+      "latestDate": "Latest date"
+    }
+  },
+  "create": {
+    "createNew": "Create new",
+    "title": "Title",
+    "status": "Status",
+    "description": "Description",
+    "options": {
+      "draft": "Draft",
+      "overdue": "Overdue",
+      "finished": "Finished",
+      "inProgress": "In progress"
+    },
+    "placeholderDescription": "Enter a description..."
+  }
+}

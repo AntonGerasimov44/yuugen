@@ -1,0 +1,16 @@
+@import '../../../scss/variables.scss';
+
+.container {
+  .overdue {
+    stroke: $error100;
+  }
+  .progress {
+    stroke: $warning100;
+  }
+  .draft {
+    stroke: $gray100;
+  }
+  .finished {
+    stroke: $success100;
+  }
+}

@@ -1,0 +1,46 @@
+@import '../../../../scss/variables.scss';
+
+.container {
+  position: relative;
+  font-weight: 500;
+  width: 76px;
+  height: 100px;
+  overflow: hidden;
+
+  .progressBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .statistic {
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray900;
+    position: absolute;
+    z-index: 3;
+    top: 26px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .status {
+    font-size: 12px;
+    width: 68px;
+    text-align: center;
+    line-height: 18px;
+    color: $gray500;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
